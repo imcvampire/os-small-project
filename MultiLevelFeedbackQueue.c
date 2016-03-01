@@ -41,6 +41,7 @@ void input (int a) {
 	scanf ("%d", &tientrinh[a].tgden);
 	printf ("Thoi gian chay:");
 	scanf ("%d", &tientrinh[a].tgchay);
+	printf("Copyright (c) 2015 Anh Quoc Nguyen, Hong Thi Tran, Duc");
 	tientrinh[a].tgconlai = tientrinh[a].tgchay;
 	tientrinh[a].hangcho = 0;
 	tientrinh[a].thutu = 0;
@@ -59,6 +60,7 @@ void table() {
 	}
 	printf ("+--------------------+-------+-------+--------+------+-------+------------------------+--------------------+\n");
 	printf ("Tong thoi gian: %d. Tong thoi gian cho cua tat ca tien trinh: %d.\n", tongtg, tongtgcho);
+	printf("Copyright (c) 2015 Anh Quoc Nguyen, Hong Thi Tran, Duc");
 	Sleep (500);
 }
 
