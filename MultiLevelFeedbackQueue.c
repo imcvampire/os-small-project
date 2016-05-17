@@ -1,16 +1,14 @@
 #include "stdio.h"
 #include "windows.h"
 
-// TODO: sap xep tien trinh sau khi promote, demote; reset time quantum khi promote, demote
-
 struct hangdoi {
 	char tentt[20];
 	int tgden;
 	int tgchay;
 	int tgconlai;
-	int hangcho; // Hang cho 1 > 2 > 3.
+	int hangcho; 
 	int tgcho;
-	int tgcho1; // tg cho tai hang cho hien tai
+	int tgcho1;
 	int thutu;
 	int tghoanthanh;
 } tientrinh[20];
@@ -29,7 +27,7 @@ void help() {
 	printf ("Chuong trinh ho tro toi da 20 tien trinh.\n");
 	printf ("Cac tien trinh duoc coi la khong yeu cau vao ra.\n");
 	printf ("Chuong trinh se cap nhat du lieu sau moi 1s.\n");
-	printf ("Hay nhap cac tien trinh theo thu tu thoi gian den. Nhap phim bat ki de bat dau nhap.\n"); // Viet them function sap xep neu du tg
+	printf ("Hay nhap cac tien trinh theo thu tu thoi gian den. Nhap phim bat ki de bat dau nhap.\n"); 
 	getchar();
 }
 
@@ -41,7 +39,6 @@ void input (int a) {
 	scanf ("%d", &tientrinh[a].tgden);
 	printf ("Thoi gian chay:");
 	scanf ("%d", &tientrinh[a].tgchay);
-	printf("Copyright (c) 2015 Anh Quoc Nguyen, Hong Thi Tran, Duc");
 	tientrinh[a].tgconlai = tientrinh[a].tgchay;
 	tientrinh[a].hangcho = 0;
 	tientrinh[a].thutu = 0;
@@ -60,7 +57,6 @@ void table() {
 	}
 	printf ("+--------------------+-------+-------+--------+------+-------+------------------------+--------------------+\n");
 	printf ("Tong thoi gian: %d. Tong thoi gian cho cua tat ca tien trinh: %d.\n", tongtg, tongtgcho);
-	printf("Copyright (c) 2015 Anh Quoc Nguyen, Hong Thi Tran, Duc");
 	Sleep (500);
 }
 
