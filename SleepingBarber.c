@@ -29,7 +29,6 @@ void Customer(int *i) {
 			printf ("Barber sleeps\n");
 		}
 		ReleaseMutex (Mutex);
-		printf("Copyright (c) 2015 Anh Quoc Nguyen, Hong Thi Tran, Duc");
 		Sleep (1000);
 	}
 }
