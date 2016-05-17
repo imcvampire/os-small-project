@@ -18,7 +18,6 @@ void producer(int *i) {
 		counter += 1;
 		ReleaseMutex (Mutex);
 		ReleaseMutex (MutexIn);
-		printf("Copyright (c) 2015 Anh Quoc Nguyen, Hong Thi Tran, Duc");
 		Sleep (500);
 	}
 }
