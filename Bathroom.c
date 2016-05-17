@@ -44,7 +44,6 @@ void male(int *i) {
 		printf("Male %d outed\n", i);
 		MaleNumber -= 1;
 		ReleaseMutex (Mutex);
-		printf("Copyright (c) 2015 Anh Quoc Nguyen, Hong Thi Tran, Duc");
 		Sleep (500);
 	}
 }
@@ -60,7 +59,6 @@ int main() {
     for (i = 0; i < number; i += 1) {
     	femaleHANDLE[i] = CreateThread (NULL, 0, (LPTHREAD_START_ROUTINE) female, (int *)i, 0, &femaleID[i]); 
     	maleHANDLE[i] = CreateThread (NULL, 0, (LPTHREAD_START_ROUTINE) male, (int *)i, 0, &maleID[i]); 
-    	printf("Copyright (c) 2015 Anh Quoc Nguyen, Hong Thi Tran, Duc");
     }
     WaitForMultipleObjects (number, femaleHANDLE, TRUE, INFINITE);
     WaitForMultipleObjects (number, maleHANDLE, TRUE, INFINITE);
