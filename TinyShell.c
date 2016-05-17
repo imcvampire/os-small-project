@@ -89,10 +89,6 @@ void TerminateProcessViaName ()
     CloseHandle(snapshot);
 }
 
-void copyright() {
-	printf("Copyright (c) 2015 Anh Quoc Nguyen, Hong Thi Tran, Duc");	
-}
-
 void Process ()
 {
 	printf ("Nhap duong dan:");
@@ -166,7 +162,6 @@ int main()
 		printf ("\n\nTinyShell\\> "); 
 		fflush (stdin);
 		gets (choice);
-		copyright();
 		if (strcmp(choice, "date") == 0) {
 			GetTime(1);
 		} else if (strcmp(choice, "time") == 0) {
